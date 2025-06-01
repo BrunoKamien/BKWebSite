@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Kamien, desenvolvedor web e técnico em informática.">
+    <title>Bruno Kamien - Portfólio</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bruno Kamien</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" data-tab="sobre">Sobre</a></li>
+                    <li><a href="#" data-tab="projetos">Projetos</a></li>
+                    <li><a href="#" data-tab="contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home-content" class="container">
+            <div class="home-grid">
+                <img src="img.png" alt="Retrato ilustrado de Bruno Kamien" class="imgprincipal">
+                <div class="home-text">
+                    <h2 class="apresentacao">Olá, Bem-vindo(a)!</h2>
+                    <p class="textoprincipal">Sou BRUNO KAMIEN, estudante na área de Tecnologia da Informação, com foco em desenvolvimento web/suporte técnico. Aqui você encontrará meus projetos, habilidades e formas de contato.</p>
+                    <p class="textoprincipal">Fique à vontade para explorar!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay"></div>
+
+    <div id="sobre-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sobre Mim</h2>
+                <button class="close-button" aria-label="Fechar modal" title="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="perfil.jpg" alt="Retrato" class="imgsobre">
+                <p>Meu nome é <strong>BRUNO KAMIEN</strong> e estou em processo de transição de carreira para a área de Tecnologia da Informação. Sou graduado em Administração pela Unopar (2019–2022) e atualmente estou cursando Técnico em Informática pela Cruzeiro do Sul, com início em 2024.</p>
+                <p>Minha trajetória profissional teve início com a participação, por um ano, como aluno do NPOR (Núcleo de Preparação de Oficiais da Reserva) no Exército Brasileiro. Essa experiência foi fundamental para o desenvolvimento de habilidades como liderança, organização, disciplina e trabalho em equipe.</p>
+                <p>Em seguida, construí minha carreira no setor industrial, adquirindo experiências que aprimoraram minha capacidade técnica, disciplina e atenção aos detalhes. Atuei como Operador de Mesa de Gravidade na Corteva, realizando a classificação de grãos com base em critérios de densidade e qualidade. Desde 2021, desempenho a função de Operador de Torno CNC na empresa Mann Peças Agrícolas, sendo responsável pela programação e operação de máquinas, controle de qualidade e interpretação de desenhos técnicos.</p>
+                <p>Sou uma pessoa organizada, proativa e comprometida com o trabalho em equipe. Estou em constante busca por aprendizado e aprimoramento, com o objetivo de aplicar minhas habilidades práticas aliadas ao conhecimento técnico na construção de uma carreira sólida em TI.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projetos-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Projetos</h2>
+                <button class="close-button" aria-label="Fechar modal" title="Fechar">&times;</button>
+            </div>
+            <div class="modal-body projetos-grid">
+                <div class="card-projeto">
+                    <video autoplay loop muted playsinline>
+                        <source src="bcnkgames.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <h3>BCNK Games Landing Page</h3>
+                    <p>Landing page responsiva criada para divulgar produtos fictícios com formulário de contato.</p>
+                    <a href="https://brunokamien.github.io/BCNKGames/" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="card-projeto">
+                    <video autoplay loop muted playsinline>
+                        <source src="curriculo.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <h3>Currículo</h3>
+                    <p>Site desenvolvido com HTML, CSS e JS para apresentar meu currículo e habilidades.</p>
+                    <a href="https://brunokamien.github.io/curriculo/" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Entre em Contato</h2>
+                <button class="close-button" aria-label="Fechar modal" title="Fechar">&times;</button>
+            </div>
+            <div class="modal-body contato-form">
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="confirmacao" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bruno Kamien - Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
